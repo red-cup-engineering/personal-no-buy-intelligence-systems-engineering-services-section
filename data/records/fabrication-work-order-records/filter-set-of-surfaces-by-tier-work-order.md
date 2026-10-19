@@ -5,8 +5,8 @@
 - `no-kyc-rule`: For tier "no-kyc", the operation admits only a surface whose `requiresIdentity` is exactly `"none"` or `"email"`.
 - `never-guess`: A surface whose relevant field is `"unknown"` is excluded with reason `"unknown"`, never admitted by guess.
 ## Prohibitions
-- `missing-catalog-refusal`: The operation must refuse a request whose `catalog.surfaces` is not an array.
-- `bad-tier-refusal`: The operation must refuse a request whose `tier` is not `"no-purchase"` or `"no-kyc"`.
+- `missing-catalog-refusal`: The operation must refuse a request whose `catalog.surfaces` is not an array. [claims: malformed-input-outside-domain]
+- `bad-tier-refusal`: The operation must refuse a request whose `tier` is not `"no-purchase"` or `"no-kyc"`. [claims: two-tiers-are-defined]
 ## Laws
 - `no-buy-surface-schema` | personal-no-buy-intelligence-systems-services-section | v1 | lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/personal-computer-systems-services-section/services/personal-intelligence-systems-services-section/services/personal-no-buy-intelligence-systems-services-section/data/records/schema/no-buy-surface.schema.json | Applies to the shape of each surface object this operation reads and returns unmodified. | The record's properties, requiredness, and value shapes are the NoBuySurface JSON Schema (draft 2020-12) at the cited path.
 - `scripts-import-scripts-and-src` | org-layering.md / import-stratification.md | v1 | .claude/rules/import-stratification.md | Applies to how this operation's own source file may be structured. | "scripts can import scripts and src. scripts cannot import apps." This operation imports no other package at all, so it trivially satisfies the stratification law.
@@ -14,6 +14,9 @@
 - `node-esm-operation` | Node.js | v24.2.0+ | https://nodejs.org/docs/v24/api/esm.html | Applies to the .mjs operation, its import.meta.main guard, and downstream package-birth assays. | The package uses one executable ESM operation source file eligible for downstream staged package-birth assays.
 ## Open questions
 none
+## Claims
+- `malformed-input-outside-domain` | derived | world | A request or field not of its declared type lies outside the operation's input domain | none | constraint:node-esm-operation; citation:Red Cup reconcile-typed-boundaries skill, a boundary admits only its declared type | Refusing an out-of-domain input is the typed boundary's own behavior, not a further choice
+- `two-tiers-are-defined` | derived | world | The tiers are the two the requirements define, no-purchase and no-kyc | none | requirement:no-purchase-rule; requirement:no-kyc-rule | A tier outside those two has no rule to apply
 ## Package
 ```json
 {"packageName":"@red-cup-engineering/filter-set-of-surfaces-by-tier-service","packageVersion":"0.1.0","license":"MIT","dependencies":{},"devDependencies":{}}
