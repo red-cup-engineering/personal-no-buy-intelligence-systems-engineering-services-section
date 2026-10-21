@@ -1,5 +1,12 @@
 # Personal No-Buy Intelligence Systems Services Section
 
+<!-- 561-group-standards:badges:start -->
+[![Red Cup Engineering](https://img.shields.io/badge/561%20Group-Red%20Cup%20Engineering-c0392b)](https://github.com/red-cup-engineering)
+[![License: MIT](https://img.shields.io/badge/license-MIT-c0392b)](LICENSE)
+[![Indigenous data: CARE](https://img.shields.io/badge/Indigenous%20data-CARE-4b6f44)](https://github.com/red-cup-engineering/.github/blob/main/GOVERNANCE.md)
+[![Tips welcome](https://img.shields.io/badge/tips-welcome-d4a017)](https://github.com/561-group/.github/blob/main/TIPS.md)
+<!-- 561-group-standards:badges:end -->
+
 The engineering root of the 561 Group's No Buy program and the seat of its Red Cup Engineering division, seated beneath [personal-intelligence-systems-services-section](../../README.md) alongside its [personal-work-intelligence-systems-services-section](../personal-work-intelligence-systems-services-section/README.md) and [personal-health-intelligence-systems-services-section](../personal-health-intelligence-systems-services-section/README.md) siblings.
 Founded 2026-09-05 from the program carrier, [561 Group No Buy Services Section](../../../../../../../../../../../561-group-services-section/services/561-group-operations-services-section/services/561-group-economic-operations-services-section/services/561-group-no-buy-services-section/README.md), which names the divisions and keeps their custody thread whole.
 
