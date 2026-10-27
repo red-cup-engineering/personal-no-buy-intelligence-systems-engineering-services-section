@@ -1,0 +1,82 @@
+{
+  "id": "2026-10-27-personal-no-buy-intelligence-systems-services-section-normalization",
+  "kind": "misfiled-resources-register",
+  "by": "apply-services-section-normalization",
+  "date": "2026-10-27",
+  "moved": [
+    {
+      "from": "data/records/fabrication-receipt-records/2026-09-05-derive-set-of-guide-chapters-from-catalog-fabrication-receipt.json",
+      "to": "data/records/service-records/fabrication-receipt-service-records/2026-09-05-derive-set-of-guide-chapters-from-catalog-fabrication-receipt.json",
+      "rule": "eavt-data-law",
+      "sourceSha256": "0ce1092add6805877892526cafc52b66b28bd815b96e56d6d3457793ff4a865e",
+      "destinationSha256": "0ce1092add6805877892526cafc52b66b28bd815b96e56d6d3457793ff4a865e",
+      "byteIdentical": true
+    },
+    {
+      "from": "data/records/fabrication-receipt-records/2026-09-05-derive-set-of-surfaces-from-measurement-fabrication-receipt.json",
+      "to": "data/records/service-records/fabrication-receipt-service-records/2026-09-05-derive-set-of-surfaces-from-measurement-fabrication-receipt.json",
+      "rule": "eavt-data-law",
+      "sourceSha256": "54162753bc3ae840c571fc3a3e9d71df6e95e880b4a5b98ee4f502a034aa44b3",
+      "destinationSha256": "54162753bc3ae840c571fc3a3e9d71df6e95e880b4a5b98ee4f502a034aa44b3",
+      "byteIdentical": true
+    },
+    {
+      "from": "data/records/fabrication-receipt-records/2026-09-05-filter-set-of-surfaces-by-tier-fabrication-receipt.json",
+      "to": "data/records/service-records/fabrication-receipt-service-records/2026-09-05-filter-set-of-surfaces-by-tier-fabrication-receipt.json",
+      "rule": "eavt-data-law",
+      "sourceSha256": "122dac9c2d7cf7c86287599d4038eb79bb9e27fc4909f89e8eb7eb9aa0fcc248",
+      "destinationSha256": "122dac9c2d7cf7c86287599d4038eb79bb9e27fc4909f89e8eb7eb9aa0fcc248",
+      "byteIdentical": true
+    },
+    {
+      "from": "data/records/fabrication-work-order-records/derive-set-of-guide-chapters-from-catalog-work-order.md",
+      "to": "data/records/service-records/fabrication-work-order-service-records/derive-set-of-guide-chapters-from-catalog-work-order.md",
+      "rule": "eavt-data-law",
+      "sourceSha256": "b7a49fb78c48c61647aac5df79f790bb917b41ad53e7340d3c18a288cf8c6811",
+      "destinationSha256": "b7a49fb78c48c61647aac5df79f790bb917b41ad53e7340d3c18a288cf8c6811",
+      "byteIdentical": true
+    },
+    {
+      "from": "data/records/fabrication-work-order-records/derive-set-of-surfaces-from-measurement-work-order.md",
+      "to": "data/records/service-records/fabrication-work-order-service-records/derive-set-of-surfaces-from-measurement-work-order.md",
+      "rule": "eavt-data-law",
+      "sourceSha256": "1375b10b8216ed5104616f49b18570ba7f3677f6351b771cee336e7ad55be349",
+      "destinationSha256": "1375b10b8216ed5104616f49b18570ba7f3677f6351b771cee336e7ad55be349",
+      "byteIdentical": true
+    },
+    {
+      "from": "data/records/fabrication-work-order-records/filter-set-of-surfaces-by-tier-work-order.md",
+      "to": "data/records/service-records/fabrication-work-order-service-records/filter-set-of-surfaces-by-tier-work-order.md",
+      "rule": "eavt-data-law",
+      "sourceSha256": "a0a5757fdf6c41c0d3e8d09268cf82be2c4aacce6fe6d51077b6667657aa8f89",
+      "destinationSha256": "a0a5757fdf6c41c0d3e8d09268cf82be2c4aacce6fe6d51077b6667657aa8f89",
+      "byteIdentical": true
+    }
+  ],
+  "owed": [
+    {
+      "rule": "stray-top-level",
+      "reason": "LICENSE/ is not an entry the services-section law knows; its owner decides where it belongs",
+      "directory": ".",
+      "count": 1
+    },
+    {
+      "rule": "recovered-means-restored",
+      "reason": "Leader, 2026-10-25: \"we need to actually recover these\"; each is restored to the record or code it came from",
+      "directory": "content/text/documents/articles/notes/recovered",
+      "count": 1
+    },
+    {
+      "rule": "specifications-have-the-ietf-form-and-live-in-engineering",
+      "reason": "Leader, 2026-10-25: \"literally not a ONE of these is a specification\"; each is reclassified by its owner and real specifications move to engineering",
+      "directory": "content/text/documents/articles/specifications",
+      "count": 1
+    },
+    {
+      "rule": "data-fits-no-service-directory",
+      "reason": "schemas-under-data-records bound it for data/records/schemas/no-buy-surface.schema.json: schemas is not <service>-records",
+      "directory": "schemas",
+      "count": 1
+    }
+  ]
+}
