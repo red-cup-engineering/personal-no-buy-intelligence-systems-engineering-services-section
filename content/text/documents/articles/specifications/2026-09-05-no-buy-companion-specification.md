@@ -42,7 +42,7 @@ what a wallet received, a router that spends a person's own free inference
 quotas before any paid lane, a companion that notices and never nags, and
 one public face that renders all of it from data. It is not a bot farm, a
 captcha solver, a multi-account tool, a wallet, an exchange, or a paid
-gateway. It never holds a person's keys or funds on the house's servers; it
+gateway. It never holds a person's keys or funds on the Group's servers; it
 never acts on a person's account at a platform; it never tells a person
 that a surface is worth their time when the ledger says it is not.
 
@@ -104,7 +104,7 @@ Every fence is a ruling already on disk, applied here.
   human step. The no-KYC tier never lists a surface whose
   `requiresIdentity` is anything but `none` or `email`; the no-purchase
   tier never lists a surface whose `requiresPurchase` is `true`.
-- **Keys never reach the house.** A person's provider keys are sealed at
+- **Keys never reach the Group.** A person's provider keys are sealed at
   rest in their own browser with the engine's AES-GCM sealing (EVE Assist's
   `./crypto`, moved upstream by the work program's lot G1) or held as
   secrets in a Worker the person deploys to their own Cloudflare account.
@@ -289,7 +289,7 @@ The person's provider keys become direct-endpoint provider entries
 `providerId`); each lane's quota is an observation `{ providerId,
 windowSeconds, remaining, resetsAt, source: "response-headers" |
 "catalog" }`; `decideWorkRoute` selects the lane by the same criteria the
-house uses for itself, with a consideration policy that admits `currency`
+Group uses for itself, with a consideration policy that admits `currency`
 obligations only when the person has said so for that request. The
 person-facing face is an OpenAI-compatible `POST /v1/chat/completions`
 that any tool the person already uses can point at, in three deployments of
@@ -344,7 +344,7 @@ or a wallet secret.
 
 ### (vii) Priced readouts on the x402 gateway
 
-Two pure readouts the house already needs for itself, sold by the call in
+Two pure readouts the Group already needs for itself, sold by the call in
 the ephemeris gateway's pattern (`X402_PAY_TO` as a Worker secret,
 facilitator-verified settlement, listed on 402index): the free-lane
 liveness and quota roster (the dispatcher's provider-card liveness cache
