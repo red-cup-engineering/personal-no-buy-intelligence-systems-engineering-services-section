@@ -144,7 +144,7 @@ Every fence is a ruling already on disk, applied here.
   signed Agent Card. This is the router; No Buy AI parameterizes it with a
   person's own endpoints and a quota observation per lane.
 - **`@red-cup-engineering/education-platform-service` 0.2.4** (seated
-  under `computer-game-system-services-section`, consumed by iYappy,
+  under `computer-game-systems-engineering-services-section`, consumed by iYappy,
   Equivo, Vaultmaze, and l-space). Exports `./srs` (`CardState`,
   `reviewCard(state, grade, now)`, `recallProbability`, `daysUntilRetention`
   with FSRS's published constants), `./session` (`buildReviewSession` over
