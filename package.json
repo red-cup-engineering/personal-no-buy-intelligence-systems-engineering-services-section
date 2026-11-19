@@ -7,25 +7,14 @@
     "url": "git+https://github.com/red-cup-engineering/personal-no-buy-intelligence-systems-engineering-services-section.git"
   },
   "type": "module",
-  "keywords": [
-    "brand:sieve-systems",
-    "engineering"
-  ],
   "exports": {
     "./derive-set-of-surfaces-from-measurement": "./scripts/derive-set-of-surfaces-from-measurement.mjs",
     "./filter-set-of-surfaces-by-tier": "./scripts/filter-set-of-surfaces-by-tier.mjs",
     "./derive-set-of-guide-chapters-from-catalog": "./scripts/derive-set-of-guide-chapters-from-catalog.mjs"
   },
-  "engines": {
-    "node": ">=24.2.0"
-  },
   "dependencies": {
     "@red-cup-engineering/computer-text-content-engineering-services-section": "workspace:*",
     "@red-cup-engineering/node-js-function-engineering-services-section": "^0.5.1"
   },
-  "license": "MIT",
-  "funding": {
-    "type": "individual",
-    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
-  }
+  "license": "MIT"
 }
