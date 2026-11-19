@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { runJavascriptNodeOperation } from "@red-cup-engineering/node-js-function-engineering-services-section/operation";
 
-const IDENTITY_ADMITTED_FOR_NO_KYC = new Set(["none", "email"]);
+const IDENTITY_VALIDATED_FOR_NO_KYC = new Set(["none", "email"]);
 
 /**
  * Filters a No Buy surface catalog to the subset admitted by one tier, with each excluded surface's reason as a datum. no-kyc admits only requiresIdentity none or email; no-purchase admits only requiresPurchase false. A surface whose relevant field is "unknown" is excluded with reason "unknown", never guessed into either tier.
@@ -16,24 +16,24 @@ export function filterSetOfSurfacesByTier(request) {
   if (request.tier !== "no-purchase" && request.tier !== "no-kyc") {
     throw new TypeError('request.tier must be "no-purchase" or "no-kyc"');
   }
-  const admitted = [];
+  const validated = [];
   const excluded = [];
   for (const surface of request.catalog.surfaces) {
     if (request.tier === "no-purchase") {
       if (surface.requiresPurchase === false) {
-        admitted.push(surface);
+        validated.push(surface);
       } else {
         excluded.push({ id: surface.id, provider: surface.provider, reason: surface.requiresPurchase === true ? "requires-purchase" : "unknown" });
       }
     } else {
-      if (IDENTITY_ADMITTED_FOR_NO_KYC.has(surface.requiresIdentity)) {
-        admitted.push(surface);
+      if (IDENTITY_VALIDATED_FOR_NO_KYC.has(surface.requiresIdentity)) {
+        validated.push(surface);
       } else {
         excluded.push({ id: surface.id, provider: surface.provider, reason: surface.requiresIdentity === "unknown" ? "unknown" : `requires-identity-${surface.requiresIdentity}` });
       }
     }
   }
-  return { tier: request.tier, admitted, excluded };
+  return { tier: request.tier, admitted: validated, excluded };
 }
 
 if (import.meta.main) {

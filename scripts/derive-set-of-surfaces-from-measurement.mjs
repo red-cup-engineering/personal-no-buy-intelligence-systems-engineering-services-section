@@ -147,7 +147,7 @@ const derivePayoutRail = (rows) => {
   return "unknown";
 };
 
-const deriveCustody = (rows) => {
+const deriveStorage = (rows) => {
   for (const row of rows) {
     const text = `${row.result ?? ""}`;
     if (/self.?custod/i.test(text)) return "self";
@@ -271,7 +271,7 @@ export function deriveSetOfSurfacesFromMeasurement(measurementRecords) {
       unitRate,
       caps: deriveCaps(rows),
       payoutRail: derivePayoutRail(rows),
-      custody: deriveCustody(rows),
+      custody: deriveStorage(rows),
       automationTerms: deriveAutomationTerms(rows),
       humanGated: deriveHumanGated(rows),
       referral: deriveReferral(rows, referralProgramsByProduct, product),
