@@ -1,0 +1,20 @@
+# @red-cup-engineering/personal-no-buy-intelligence-systems-engineering-services-section
+
+<!-- 561-group-standards:badges:start -->
+[![Red Cup Engineering](https://img.shields.io/badge/561%20Group-Red%20Cup%20Engineering-c0392b)](https://github.com/red-cup-engineering)
+[![License: MIT](https://img.shields.io/badge/license-MIT-c0392b)](LICENSE)
+[![Indigenous data: CARE](https://img.shields.io/badge/Indigenous%20data-CARE-4b6f44)](https://github.com/red-cup-engineering/.github/blob/main/GOVERNANCE.md)
+[![Tips welcome](https://img.shields.io/badge/tips-welcome-d4a017)](https://github.com/561-group/.github/blob/main/TIPS.md)
+<!-- 561-group-standards:badges:end -->
+
+Owns capabilities whose primary subject is a composed intelligence system that helps a person earn without buying: the surface catalog schema, the routine scheduler, the two-witness earning ledger, the free-lane router, and the companion.
+
+The engineering root of the 561 Group's No Buy program and the seat of its Red Cup Engineering division, assigned beneath [personal-intelligence-systems-services-section](../../README.md) alongside its [personal-work-intelligence-systems-engineering-services-section](../personal-work-intelligence-systems-engineering-services-section/README.md) and [personal-health-intelligence-systems-engineering-services-section](../personal-health-intelligence-systems-engineering-services-section/README.md) siblings.
+Founded 2026-09-05 from the program carrier, [561 Group No Buy Services Section](../../../../../../../../../../../561-group-services-section/services/561-group-operations-services-section/services/561-group-economic-operations-services-section/services/561-group-no-buy-services-section/README.md), which names the divisions and keeps their ownership thread whole.
+
+This section stays the No Buy platform's shared engineering seat, holding only what No Buy Crypto and No Buy AI both need: the surface catalog schema and its two tier fields, the companion in PACER's shape, and the assistant engine shared with EVE Assist and Gig Assist. The two enterprise-specific parts named in the same specification — the routine scheduler over the education kernel and the two-witness earning ledger over farolfi (No Buy Crypto's) and the free-lane router over inference-dispatch and the provider teams (No Buy AI's) — moved down 2026-09-05, per emsenn's own correction that the two enterprises "are meant to be separate," into their own path-named engineering children:
+
+- [personal-no-buy-crypto-intelligence-systems-services-section](services/personal-no-buy-crypto-intelligence-systems-services-section/README.md) — the routine deck and the earning ledger.
+- [personal-no-buy-ai-intelligence-systems-services-section](services/personal-no-buy-ai-intelligence-systems-services-section/README.md) — the free-lane router.
+
+Its specification seats under [content/text/documents/articles/specifications/2026-09-05-no-buy-companion-specification.md](content/text/documents/articles/specifications/2026-09-05-no-buy-companion-specification.md), read jointly by this seat and its two children.
